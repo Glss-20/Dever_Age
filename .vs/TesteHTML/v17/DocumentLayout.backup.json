@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|d:\\documents\\estudos_lacerda\\projetos\\dever de casa - agezandro\\testehtml\\servidorhttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|solutionrelative:servidorhttp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|d:\\documents\\estudos_lacerda\\projetos\\dever de casa - agezandro\\testehtml\\pagina2_curso.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|solutionrelative:pagina2_curso.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|d:\\documents\\estudos_lacerda\\projetos\\dever de casa - agezandro\\testehtml\\pagina2_aluno.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|solutionrelative:pagina2_aluno.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|d:\\documents\\estudos_lacerda\\projetos\\dever de casa - agezandro\\testehtml\\pagina_inicial.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|solutionrelative:pagina_inicial.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|d:\\documents\\estudos_lacerda\\projetos\\dever de casa - agezandro\\testehtml\\pagina3_curso.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|solutionrelative:pagina3_curso.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|d:\\documents\\estudos_lacerda\\projetos\\dever de casa - agezandro\\testehtml\\pagina3_aluno.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|solutionrelative:pagina3_aluno.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|d:\\documents\\estudos_lacerda\\projetos\\dever de casa - agezandro\\testehtml\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|solutionrelative:aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|d:\\documents\\estudos_lacerda\\projetos\\dever de casa - agezandro\\testehtml\\curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|solutionrelative:curso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|d:\\documents\\estudos_lacerda\\projetos\\dever de casa - agezandro\\testehtml\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6ACFA701-E7B3-41BE-B5FB-6794940EDA33}|TesteHTML.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T03:14:20.523Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Aluno.cs",
+              "DocumentMoniker": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Aluno.cs",
+              "RelativeDocumentMoniker": "Aluno.cs",
+              "ToolTip": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Aluno.cs",
+              "RelativeToolTip": "Aluno.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T01:00:59.187Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Curso.cs",
+              "DocumentMoniker": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Curso.cs",
+              "RelativeDocumentMoniker": "Curso.cs",
+              "ToolTip": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Curso.cs",
+              "RelativeToolTip": "Curso.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T01:21:35.014Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServidorHTTP.cs",
+              "DocumentMoniker": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\ServidorHTTP.cs",
+              "RelativeDocumentMoniker": "ServidorHTTP.cs",
+              "ToolTip": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\ServidorHTTP.cs*",
+              "RelativeToolTip": "ServidorHTTP.cs*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAQwBQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T02:42:15.858Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pagina2_Curso.html",
+              "DocumentMoniker": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Pagina2_Curso.html",
+              "RelativeDocumentMoniker": "Pagina2_Curso.html",
+              "ToolTip": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Pagina2_Curso.html",
+              "RelativeToolTip": "Pagina2_Curso.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-25T03:03:15.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pagina2_Aluno.html",
+              "DocumentMoniker": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Pagina2_Aluno.html",
+              "RelativeDocumentMoniker": "Pagina2_Aluno.html",
+              "ToolTip": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Pagina2_Aluno.html",
+              "RelativeToolTip": "Pagina2_Aluno.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-25T03:02:58.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Pagina3_Aluno.html",
+              "DocumentMoniker": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Pagina3_Aluno.html",
+              "RelativeDocumentMoniker": "Pagina3_Aluno.html",
+              "ToolTip": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Pagina3_Aluno.html",
+              "RelativeToolTip": "Pagina3_Aluno.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-25T01:26:19.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pagina3_Curso.html",
+              "DocumentMoniker": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Pagina3_Curso.html",
+              "RelativeDocumentMoniker": "Pagina3_Curso.html",
+              "ToolTip": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Pagina3_Curso.html",
+              "RelativeToolTip": "Pagina3_Curso.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-25T01:26:19.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pagina_inicial.html",
+              "DocumentMoniker": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Pagina_inicial.html",
+              "RelativeDocumentMoniker": "Pagina_inicial.html",
+              "ToolTip": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\Pagina_inicial.html",
+              "RelativeToolTip": "Pagina_inicial.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-18T02:25:12.349Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
