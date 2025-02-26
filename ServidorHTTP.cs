@@ -8,8 +8,8 @@ namespace TesteHTML
 {
     public class ServidorHTTP
     {
-        private static string conexaoString = "server=localhost; database=banco_projeto_age; user=root; password=Glss;";
-        private static string basePath = @"D:\Documents\ESTUDOS_LACERDA\Projetos\Dever de casa - Agezandro\TesteHTML";
+        private static string conexaoString = Configuracao.ObterStringConexao();
+        private static string basePath = AppDomain.CurrentDomain.BaseDirectory;
 
         public static void Iniciar_Servidor()
         {
@@ -17,6 +17,7 @@ namespace TesteHTML
             servidor.Prefixes.Add("http://localhost:5000/");
             servidor.Start();
             Console.WriteLine("Servidor rodando em http://localhost:5000");
+            //Process.Start("explorer", "http://localhost:5000/Pagina_inicial.html");
 
             while (true)
             {

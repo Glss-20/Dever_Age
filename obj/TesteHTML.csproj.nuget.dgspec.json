@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\TesteHTML.csproj": {}
+    "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\TesteHTML.csproj": {
+    "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\TesteHTML.csproj",
+        "projectUniqueName": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML.csproj",
         "projectName": "TesteHTML",
-        "projectPath": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\TesteHTML.csproj",
+        "projectPath": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML.csproj",
         "packagesPath": "C:\\Users\\Lacerda\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\TesteHTML\\obj\\",
+        "outputPath": "D:\\Documents\\ESTUDOS_LACERDA\\Projetos\\Dever de casa - Agezandro\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -53,6 +53,10 @@
             "MySql.Data": {
               "target": "Package",
               "version": "[9.2.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             }
           },
           "imports": [

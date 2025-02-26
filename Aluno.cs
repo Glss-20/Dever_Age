@@ -12,8 +12,8 @@ namespace TesteHTML
         public int Id { get; set; }
         public string Nome { get; set; }
 
-        private static string conexaoString = "server=localhost; database=banco_projeto_age; user=root; password=Glss;";
-        private static string caminhoHTML = @"D:\Documents\ESTUDOS_LACERDA\Projetos\Dever de casa - Agezandro\TesteHTML\Pagina2_Aluno.html";
+        private static string conexaoString = Configuracao.ObterStringConexao();
+        private static string caminhoHTML = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Pagina2_Aluno.html");
 
         public Aluno()
         {
@@ -72,7 +72,7 @@ namespace TesteHTML
 
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(conexaoString))
+                using (MySqlConnection conexao = new MySqlConnection(conexaoString));
                 {
                     conexao.Open();
                     Console.WriteLine("✅ Conexão com o banco aberta!");
@@ -115,8 +115,9 @@ namespace TesteHTML
                     string query = "INSERT INTO alunos (id, nome) VALUES (@id, @nome)";
 
                     using (MySqlCommand comando = new MySqlCommand(query, conexao))
+                    //using (MySqlConnection conexao = new MySqlConnection(conexaoString))
                     {
-                        comando.Parameters.AddWithValue("@id", Id);
+                        comando.Parameters.AddWithValue("@id", Id   );
                         comando.Parameters.AddWithValue("@nome", Nome);
                         comando.ExecuteNonQuery();
                     }
