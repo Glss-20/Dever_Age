@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TesteHTML")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61a8361070ad323d0c565e17e1d2273b6d0f7b64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fcf426d2792cd752b1cfc708e5bd0b45ebd777ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("TesteHTML")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TesteHTML")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

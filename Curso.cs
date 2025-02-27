@@ -1,125 +1,119 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-using MySql.Data.MySqlClient;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Web;
-//using System.Net.HttpUtility;
+﻿using System;  
+using System.Collections.Generic;  
+using System.IO;  
+using System.Text;  
+using MySql.Data.MySqlClient;  
+using System.Web;  
 
-namespace TesteHTML
+namespace TesteHTML  
 {
-    public class Curso
+    public class Curso  
     {
-        public int Id { get; set; }
-        public string Nome { get; set; }
+        public int Id { get; set; }  
+        public string Nome { get; set; }  
 
-        private static string conexaoString = Configuracao.ObterStringConexao();
-        private static string caminhoHTML = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Pagina2_Curso.html");
+        private static string conexaoString = Configuracao.ObterStringConexao(); // String de conexão com o banco de dados
+        private static string caminhoHTML = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Pagina2_Curso.html"); // Arquivo HTML para a lista de cursos
 
-        public Curso() { }
+        public Curso() { }  
 
-        public Curso(int id, string nome)
+        public Curso(int id, string nome) 
         {
             this.Id = id;
             this.Nome = nome;
         }
 
+        // Cadastrar curso no banco de dados
         public static void Cadastro(string dados)
         {
-            var parametros = System.Web.HttpUtility.ParseQueryString(dados);
-            int id = int.Parse(parametros["id"]);
-            string nome = parametros["nome"];
+            var parametros = System.Web.HttpUtility.ParseQueryString(dados); 
+            int id = int.Parse(parametros["id"]);  
+            string nome = parametros["nome"];  
 
-            Curso curso = new Curso(id, nome);
-            curso.ExibirCadastro();
-            curso.SalvarBanco();
+            Curso curso = new Curso(id, nome);  
+            curso.SalvarBanco();  
         }
 
+        // Gerar a página HTML com a lista de cursos
         public static string PaginaCursos()
         {
-            if (!File.Exists(caminhoHTML))
+            if (!File.Exists(caminhoHTML))  
             {
-                return "<h2>Erro: Página não encontrada!</h2>";
+                return "<h2>Erro: Página não encontrada!</h2>";  
             }
 
-            string html = File.ReadAllText(caminhoHTML, Encoding.UTF8);
-            StringBuilder listaHtml = new StringBuilder();
+            string html = File.ReadAllText(caminhoHTML, Encoding.UTF8); // Lê o conteúdo do HTML
+            StringBuilder listaHtml = new StringBuilder();  
 
-            List<Curso> cursos = Curso.ListarCursos();
+            List<Curso> cursos = Curso.ListarCursos(); 
 
-            if (cursos.Count == 0)
+            if (cursos.Count == 0) 
             {
-                listaHtml.AppendLine("<li>Nenhum curso cadastrado.</li>");
+                listaHtml.AppendLine("<li>Nenhum curso cadastrado.</li>");  
             }
-            else
+            else 
             {
-                foreach (Curso curso in cursos)
+                foreach (Curso curso in cursos)  
                 {
-                    listaHtml.AppendLine($"<li>ID: {curso.Id} - Nome: {curso.Nome}</li>");
+                    listaHtml.AppendLine($"<li>ID: {curso.Id} - Nome: {curso.Nome}</li>"); 
                 }
             }
 
-            return html.Replace("<!--Cursos-->", $"<ul>{listaHtml}</ul>");
+            return html.Replace("<!--Cursos-->", $"<ul>{listaHtml}</ul>"); 
         }
 
+        // Listar todos os cursos cadastrados no banco de dados
         public static List<Curso> ListarCursos()
         {
-            List<Curso> cursos = new List<Curso>();
+            List<Curso> cursos = new List<Curso>();  
 
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(Configuracao.ObterStringConexao()))
+                using (MySqlConnection conexao = new MySqlConnection(Configuracao.ObterStringConexao())) // Nova conexão com o banco de dados
                 {
-                    conexao.Open();
-                    string query = "SELECT id, nome FROM cursos";
+                    conexao.Open();  
+                    string query = "SELECT id, nome FROM cursos";  
 
-                    using (MySqlCommand comando = new MySqlCommand(query, conexao))
-                    using (MySqlDataReader leitor = comando.ExecuteReader())
+                    using (MySqlCommand comando = new MySqlCommand(query, conexao)) // Comando SQL
+                    using (MySqlDataReader leitor = comando.ExecuteReader())  // Executa a consulta e obtém os dados
                     {
-                        while (leitor.Read())
+                        while (leitor.Read())  
                         {
-                            var curso = new Curso(leitor.GetInt32("id"), leitor.GetString("nome"));
-                            cursos.Add(curso);
+                            var curso = new Curso(leitor.GetInt32("id"), leitor.GetString("nome")); 
+                            cursos.Add(curso); 
                         }
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception ex)  
             {
-                Console.WriteLine("Erro ao buscar cursos: " + ex.Message);
+                
             }
 
-            return cursos;
+            return cursos; // Retorna a lista de cursos
         }
 
-        public void ExibirCadastro()
-        {
-            Console.WriteLine($"ID = {Id} - Nome = {Nome}");
-        }
-
+        // Salvar dados do curso no banco de dados
         public void SalvarBanco()
         {
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(Configuracao.ObterStringConexao()))
+                using (MySqlConnection conexao = new MySqlConnection(Configuracao.ObterStringConexao())) 
                 {
-                    conexao.Open();
-                    string query = "INSERT INTO cursos (id, nome) VALUES (@id, @nome)";
+                    conexao.Open(); 
+                    string query = "INSERT INTO cursos (id, nome) VALUES (@id, @nome)";  
 
-                    using (MySqlCommand comando = new MySqlCommand(query, conexao))
+                    using (MySqlCommand comando = new MySqlCommand(query, conexao))  
                     {
-                        comando.Parameters.AddWithValue("@id", Id);
-                        comando.Parameters.AddWithValue("@nome", Nome);
-                        comando.ExecuteNonQuery();
+                        comando.Parameters.AddWithValue("@id", Id);  
+                        comando.Parameters.AddWithValue("@nome", Nome);  
+                        comando.ExecuteNonQuery();  
                     }
                 }
-                Console.WriteLine("Curso cadastrado com sucesso!");
             }
-            catch (Exception ex)
+            catch (Exception ex)  
             {
-                Console.WriteLine($"Erro ao salvar no banco: {ex.Message}");
+               
             }
         }
     }
