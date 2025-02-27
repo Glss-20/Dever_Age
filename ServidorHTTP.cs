@@ -3,20 +3,23 @@ using System;
 using System.IO;
 using System.Net;
 using System.Text;
+using ZstdSharp.Unsafe;
 
 namespace TesteHTML
 {
     public class ServidorHTTP
     {
         private static string conexaoString = Configuracao.ObterStringConexao();
-        private static string basePath = AppDomain.CurrentDomain.BaseDirectory;
+        private static string basePath = AppDomain.CurrentDomain.BaseDirectory; 
 
+        
         public static void Iniciar_Servidor()
         {
             HttpListener servidor = new HttpListener();
             servidor.Prefixes.Add("http://localhost:5000/");
             servidor.Start();
-            Console.WriteLine("Servidor rodando em http://localhost:5000");
+            Console.WriteLine("Servidor rodando em http://localhost:5000/Pagina_inicial.html");
+
             //Process.Start("explorer", "http://localhost:5000/Pagina_inicial.html");
 
             while (true)
@@ -27,11 +30,13 @@ namespace TesteHTML
 
                 string caminho = request.Url.AbsolutePath.TrimStart('/');
                 string caminhoPagina = Path.Combine(basePath, caminho);
+                string caminhoConfig = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "config.json");
 
-                Console.WriteLine($"🔎 Requisição recebida: {request.HttpMethod} {caminho}");
+                Console.WriteLine($"🔎 Requisição recebida: {request.HttpMethod} {caminho}");             
 
                 try
                 {
+                    // Requisição da Pagina3_Aluno
                     if (request.HttpMethod == "POST" && caminho == "cadastrar")
                     {
                         using (StreamReader reader = new StreamReader(request.InputStream, request.ContentEncoding))
@@ -48,6 +53,7 @@ namespace TesteHTML
                         continue;
                     }
 
+                    // Requisição da Pagina2_Aluno
                     if (caminho == "Pagina2_Aluno.html")
                     {
                         Console.WriteLine("✅ Página de alunos requisitada! Gerando lista...");
@@ -60,6 +66,7 @@ namespace TesteHTML
                         continue;
                     }
 
+                    // Requisição da Pagina3_Curso
                     else if (request.HttpMethod == "POST" && caminho == "cadastrar_curso")
                     {
                         using (StreamReader reader = new StreamReader(request.InputStream, request.ContentEncoding))
@@ -75,6 +82,7 @@ namespace TesteHTML
                         response.OutputStream.Close();
                     }
 
+                    // Requisição da Pagina2_Aluno
                     else if (caminho == "Pagina2_Curso.html")
                     {
                         Console.WriteLine("✅ Página de cursos requisitada! Gerando lista...");
@@ -97,6 +105,20 @@ namespace TesteHTML
                         response.OutputStream.Close();
                         continue;
                     }
+
+                    string caminhoArquivo = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, caminho);
+
+                    if (File.Exists(caminhoArquivo))
+                    {
+                        Console.WriteLine($"📄 Servindo arquivo HTML: {caminhoArquivo}");
+                        byte[] buffer = File.ReadAllBytes(caminhoArquivo);
+                        response.ContentType = "text/html";
+                        response.ContentLength64 = buffer.Length;
+                        response.OutputStream.Write(buffer, 0, buffer.Length);
+                        response.OutputStream.Close();
+                        continue;
+                    }
+
 
                     Console.WriteLine("❌ Página não encontrada.");
                     string errorMessage = "<html><body><h2>Página não encontrada</h2><button onclick=\"window.history.back();\">Voltar</button></body></html>";

@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Web;
+//using System.Net.HttpUtility;
+using System.IO;
 
 namespace TesteHTML
 {
@@ -26,7 +29,7 @@ namespace TesteHTML
             this.Nome = nome;
         }
 
-
+        
         public static void Cadastro(string dados)
         {
             var parametros = System.Web.HttpUtility.ParseQueryString(dados);
@@ -72,7 +75,7 @@ namespace TesteHTML
 
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(conexaoString));
+                using (MySqlConnection conexao = new MySqlConnection(Configuracao.ObterStringConexao()))
                 {
                     conexao.Open();
                     Console.WriteLine("✅ Conexão com o banco aberta!");
@@ -109,7 +112,7 @@ namespace TesteHTML
         {
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(conexaoString))
+                using (MySqlConnection conexao = new MySqlConnection(Configuracao.ObterStringConexao()))
                 {
                     conexao.Open();
                     string query = "INSERT INTO alunos (id, nome) VALUES (@id, @nome)";

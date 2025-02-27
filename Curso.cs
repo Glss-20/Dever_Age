@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using MySql.Data.MySqlClient;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Web;
+//using System.Net.HttpUtility;
 
 namespace TesteHTML
 {
@@ -66,7 +70,7 @@ namespace TesteHTML
 
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(Config.ConexaoString))
+                using (MySqlConnection conexao = new MySqlConnection(Configuracao.ObterStringConexao()))
                 {
                     conexao.Open();
                     string query = "SELECT id, nome FROM cursos";
@@ -99,7 +103,7 @@ namespace TesteHTML
         {
             try
             {
-                using (MySqlConnection conexao = new MySqlConnection(Config.ConexaoString))
+                using (MySqlConnection conexao = new MySqlConnection(Configuracao.ObterStringConexao()))
                 {
                     conexao.Open();
                     string query = "INSERT INTO cursos (id, nome) VALUES (@id, @nome)";

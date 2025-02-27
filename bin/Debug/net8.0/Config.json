@@ -1,0 +1,3 @@
+{
+  "ConexaoMySQL": "server=localhost; database=banco_projeto_age; user=root; password=Glss;"
+}

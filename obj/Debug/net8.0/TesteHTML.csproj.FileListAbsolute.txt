@@ -79,3 +79,4 @@ D:\Documents\ESTUDOS_LACERDA\Projetos\Dever de casa - Agezandro\obj\Debug\net8.0
 D:\Documents\ESTUDOS_LACERDA\Projetos\Dever de casa - Agezandro\obj\Debug\net8.0\TesteHTML.pdb
 D:\Documents\ESTUDOS_LACERDA\Projetos\Dever de casa - Agezandro\obj\Debug\net8.0\TesteHTML.genruntimeconfig.cache
 D:\Documents\ESTUDOS_LACERDA\Projetos\Dever de casa - Agezandro\obj\Debug\net8.0\ref\TesteHTML.dll
+D:\Documents\ESTUDOS_LACERDA\Projetos\Dever de casa - Agezandro\bin\Debug\net8.0\Newtonsoft.Json.dll
